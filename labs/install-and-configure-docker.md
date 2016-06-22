@@ -9,6 +9,9 @@ In this lab you will install and configure Docker on node0 and node1.
 ```
 gcloud compute ssh node0
 ```
+### Update CoreOS with the latest version
+sudo su
+update_engine_client -update
 
 ### Create the docker systemd unit file
 
