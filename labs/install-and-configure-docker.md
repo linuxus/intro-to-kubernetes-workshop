@@ -11,6 +11,7 @@ gcloud compute ssh node0
 ```
 ### Update CoreOS with the latest version
 sudo su
+
 update_engine_client -update
 
 ### Create the docker systemd unit file
@@ -62,6 +63,10 @@ docker version
 ```
 gcloud compute ssh node1
 ```
+### Update CoreOS with the latest version
+sudo su
+
+update_engine_client -update
 
 ### Create the docker systemd unit file
 
