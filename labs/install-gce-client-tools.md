@@ -19,7 +19,7 @@ Grab the service account docs from here:
 [Google Service Account Docs](https://developers.google.com/console/help/new/#serviceaccounts)
 
 ## Verify your account is setup correctly
-
+Make sure you have a network called dcos in your GCE
 Run the following commands to make sure your GCE account is setup:
 
 Create a VM named `workshop-test`
@@ -31,7 +31,8 @@ gcloud compute instances create workshop-test \
  --boot-disk-size 200GB \
  --machine-type n1-standard-1 \
  --can-ip-forward \
- --scopes compute-rw
+ --scopes compute-rw \
+ --network dcos
 ```
 
 List all VMs:
