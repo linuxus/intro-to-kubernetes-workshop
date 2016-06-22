@@ -14,7 +14,8 @@ gcloud compute instances create node0 \
  --image coreos-stable-835-12-0-v20160202 \
  --boot-disk-size 200GB \
  --machine-type n1-standard-1 \
- --can-ip-forward
+ --can-ip-forward \
+ --network dcos
 ```
 
 #### node1
@@ -25,7 +26,8 @@ gcloud compute instances create node1 \
  --image coreos-stable-835-12-0-v20160202 \
  --boot-disk-size 200GB \
  --machine-type n1-standard-1 \
- --can-ip-forward
+ --can-ip-forward \
+ --network dcos
 ```
 
 #### Verify
