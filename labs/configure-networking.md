@@ -9,13 +9,13 @@ In this lab you will configure the network between node0 and node1 to ensure cro
 ```
 gcloud compute routes create default-route-10-200-0-0-24 \
   --destination-range 10.200.0.0/24 \
-  --next-hop-instance node0
+  --next-hop-instance node0 \
   --network dcos
 ```
 ```
 gcloud compute routes create default-route-10-200-1-0-24 \
   --destination-range 10.200.1.0/24 \
-  --next-hop-instance node1
+  --next-hop-instance node1 \
   --network dcos
 ```
 
