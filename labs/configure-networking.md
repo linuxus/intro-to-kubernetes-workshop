@@ -28,7 +28,8 @@ gcloud compute routes list
 ```
 gcloud compute firewall-rules create default-allow-kubernetes-secure \
   --allow tcp:6443 \
-  --source-ranges 0.0.0.0/0
+  --source-ranges 0.0.0.0/0 \
+  --network dcos
 ``` 
 
 ## Allow add-ons to query the API server
@@ -36,7 +37,8 @@ gcloud compute firewall-rules create default-allow-kubernetes-secure \
 ```
 gcloud compute firewall-rules create default-allow-local-api \
   --allow tcp:8080 \
-  --source-ranges 10.200.0.0/16
+  --source-ranges 10.200.0.0/16 \
+  --network dcos
 ```
 
 
